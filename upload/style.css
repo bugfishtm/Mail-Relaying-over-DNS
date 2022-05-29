@@ -1,0 +1,22 @@
+html { background: #121212;color: white !important;font-family: Arial;margin: 0 0 0 0; padding: 0 0 0 0; }
+body{ width: 100%; margin: 0 0 0 0; padding: 0 0 0 0;}
+a { color: #f56600;text-decoration: none; }
+a:hover { color: white; }
+
+input[type=password],input[type=text]{width:100%;border:none;font-size:22px;background:#fff;color:#000;text-align:center;height:35px;border-radius:5px;padding-left:0;padding-right:0;margin-left:0;margin-right:0;background:rgba(255,255,255,.1);color:#fff ;margin-bottom: 15px;}
+input[type=submit]{width:100%;background: #f56600;border-radius:5px; border: none; color:#fff;padding:5px; margin-bottom: 15px;font-weight: bold;}
+input[type=submit]:hover {background: blue;}	
+input[type=password]:hover,input[type=text]:hover{background:rgba(255,255,255,.2)}
+	
+#mrdns_login {  margin: auto; width: 100%; max-width: 500px; padding: 25px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+#mrdns_nav { position: fixed; top: 0px; left: 0px; background: black; width: 100%; margin: 0 0 0 0; padding-top: 15px; padding-bottom: 15px; text-align: center; font-size: 14px; color: lightgrey; }
+#mrdns_nav a { padding-left: 5px; padding-right: 5px; }
+#mrdns_error { text-align: center; background: red; padding: 25px ; color: white; max-width: 500px; margin: auto; width:100 %; border-radius: 15px; margin-top: 15px; }
+#mrdns_content { width: 100%; margin: 0 0 0 0; padding: 0 0 0 0; margin: auto; max-width: 700px; margin-top: 75px; }
+#mrdns_footer { position: fixed; bottom: 0px; left: 0px; background: black; width: 100%; margin: 0 0 0 0; padding: 0 0 0 0;	 text-align: center;	padding-top: 15px; padding-bottom: 15px; color: white; font-weight: bold; font-size: 14px; }
+
+#nac_active { color: white; }
+tr:hover {	background: #323232; }
+
+#tracker_listitem {float: left; }
+

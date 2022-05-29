@@ -1,0 +1,1 @@
+php8.1 /var/www/html/cronjob.php; postmap /etc/postfix/relaydomains; postmap /etc/postfix/transportmaps; service postfix restart
