@@ -49,9 +49,12 @@
 		// Variables
 			$buildstring_transport = "";
 			$buildstring_relay = "";
-
+			
 			$result = mysqli_query($mysql, "SELECT * FROM `"._TABLE_DOMAINS_."`") or die(mysqli_error($mysql));
-			while ($vars = mysqli_fetch_array($result, MYSQLI_BOTH)) {			
+			while ($vars = mysqli_fetch_array($result, MYSQLI_BOTH)) {	
+				$servername = false;
+				$serverport = false;
+				
 				$query11	=	"SELECT * FROM `"._TABLE_SERVERS_."` WHERE id = '".$vars["serverid"]."'"; 
 				$result11 = mysqli_query($mysql, $query11) or die(mysqli_error($mysql));
 				while ($vars11 = mysqli_fetch_array($result11, MYSQLI_BOTH)) {
@@ -59,8 +62,8 @@
 					$serverport = $vars11["port"];
 				}
 				
-				if(empty($servername)) { $servername = $vars["ovrservername"]; }
-				if(empty($serverport)) { $serverport = $vars["ovrserverport"]; }
+				if(!is_string($servername)) { $servername = $vars["ovrservername"]; }
+				if(!is_numeric($serverport)) { $serverport = $vars["ovrserverport"]; }
 				
 				if($serverport == 25) { $buildstring_transport .= $vars["domain"]." smtp:".$servername.":".$serverport."\n"; } 
 				else { $buildstring_transport .= $vars["domain"]." smtp:".$servername.":".$serverport."\n"; }
