@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <!-- META RELATED -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+	<meta property="og:image" content="https://bugfishtm.github.io/assets/meta.png" />
+	<meta name="subject" content="documentation">
+	<meta name="copyright" content="bugfish">
+	<meta name='language' content='en'>
+	<meta name='robots' content='index,follow'>
+	<meta name='author' content='bugfish, ynvnzmlzaa@gmail.com'>
+	<!-- LINK RELATED -->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>    
+	<link rel="stylesheet" href="assets/css/atom-one-dark.min.css">
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">	
+	<link id="theme-style" rel="stylesheet" href="assets/css/stylesheet.css">
+    <script src="assets/js/jq.3.6.min.js"></script>	
+    <script src="assets/js/jquery.highlight.js"></script>
+    <script src="assets/js/jquery.scrollto.js"></script>
+    <script src="assets/js/jquery.finder.js"></script>
+	<!-- Descriptions -->
+    <title>Mail Relaying over DNS [MRoD] - BugfishDocs</title>
+	<meta property="og:title" content="Mail Relaying over DNS [MRoD] - BugfishDocs"/>
+	<meta name="description" content="This is backup and availability Software. This makes a second DNS usable as a Backup Mail Server for Incoming Mail for Different Domains. To make this work you need to setup the server, where this script is installed - as secondary MX Server in the Domains DNS Record Settings (Take a look at your Domain Providers). We wish you the best...">
+</head> 
+<body class="docs-page" data-finder-wrapper>    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="https://bugfishtm.github.io"><img class="logo-icon me-2" src="assets/logo.png" alt="logo" width="25"><span class="logo-text">Bugfish<span class="text-alt">Docs</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    <div class="docs-wrapper" >
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Mail Relaying over DNS</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Informations</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Installation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Settings</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Initial Login</a></li>
+					<!-- Various Informations -->
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-hashtag"></i></span>Various</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1" target="_blank">How to get support?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2" target="_blank">License</a></li>
+					<!-- Impressum and Bugfish Link -->
+				    <li class="nav-item section-title mt-3"><a class="nav-link"><span class="theme-icon-holder me-2"><i class="fas fa-link"></i></span>Links</a></li>
+				    <li class="nav-item"><a class="nav-link" href="https://www.bugfish.eu" target="_blank">My Website</a></li>
+				    <li class="nav-item"><a class="nav-link" href="https://bugfishtm.github.io" target="_blank">Documentations</a></li>
+				    <li class="nav-item"><a class="nav-link" href="https://bugfishtm.blogspot.com/2023/05/impressum.html" target="_blank">Impressum</a></li>
+				    <li class="nav-item"><a class="nav-link" href="https://bugfishtm.blogspot.com/2023/05/privacy.html" target="_blank">Privacy</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content" data-finder-content>
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Mail Relaying over DNS [MRoD]<span class="docs-time">Documentations</span></h1>
+					    <section class="docs-intro">
+						    <p>This is the Documentation for the Mail Relaying over DNS [MRoD] Websoftware!</p>
+						<a href="https://github.com/bugfishtm/Mail-Relaying-over-DNS/archive/refs/heads/main.zip" class="btn btn-primary"  target="_blank"><i class="fas fa-download me-2"></i> Download</a>
+						<a href="https://github.com/bugfishtm/Mail-Relaying-over-DNS" class="btn btn-info" target="_blank"><i class="fas fa-link me-2" ></i> Github</a>
+						</section><!--//docs-intro-->
+				    </header>
+				    <section class="docs-section" id="item-1-1">
+
+<h2 id="mail-relaying-over-dns" class="orangetext">Informations</h2>
+<p>Here you can see general informations about this software, you should check them urgently before you use it! I hope you will get an understanding what this software is for and how you can use it. If you have questions outside this documentations do not hesitate to contact me! This software will occupy the email functionality of the server it is installed on, keep this in mind - this script will break a running mail configuration and change it for its purpose! It can not be used with plesk or other software which does manage mail configurations side-by-side. It is clearly advised, to install this software on a dedicated server for it!<br />
+
+ <video width="320" height="240" controls>
+  <source src="./introduction.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> <br />
+<a href="./introduction.mp4" target="_blank">Download Video</a> | <a href="./presentation.pptx" target="_blank">Download Presentation</a>
+<br /><br />
+This software has been tested on different linux system with postfix in standalone mode and with bind together if auto-domain-fetching for domain relaying is needed.<br />
+<b>Tested on:</b> Debian 8/9/10/11<br />
+<b>Tested on:</b> Ubuntu 16/18/20/22<br />
+<b>Tested on:</b> Different Postfix Versions (Standalone)<br />
+<b>Tested on:</b> DIfferent Bind9 Versions (Auto-Fetch Domains)</p>
+<b id="aboutsoftware" class="orangetext">About this Software</b><br />
+<p>This websoftware makes your server to a mail backup relay! It can be used standalone, by users configuring domains which should be relay to master-mail-servers - besides that this panel can be used on a secondary dns server and fetch to registered dns domains. More informations below. To summarize, if you have a mail server which is receiving and sending mails this server will be untouched. But if you plan to have a second server as backup, so if your master-mail server goes offline and you want to store incoming mail on a secondary mail server until the master server is online again. The mail will then be forwarded to the "real" server. You can set up the related Master-Mail Server per domain and you can set up different Relay Servers, which than can be connected to Mail Domains.</p>
+<h3>Screenshots</h3> <br />
+
+<div class="simplelightbox-gallery row mb-3">
+							<div class="col-12 col-md-4 mb-3">
+						        <a href="1.png"><img class="figure-img img-fluid shadow rounded" src="1.png" alt="" title="Sreenshot of IP Blocklist"></a>
+							</div>
+							<div class="col-12 col-md-4 mb-3">
+						        <a href="2.png"><img class="figure-img img-fluid shadow rounded" src="2.png" alt="" title="Screenshot of Relay Server Creation"></a>
+							</div><!--//col-->
+							<div class="col-12 col-md-4 mb-3">
+						        <a href="main.png"><img class="figure-img img-fluid shadow rounded" src="main.png" alt="" title="Image of User Management Panel"></a>
+							</div><!--//col-->
+						</div>
+
+<br />
+<b id="automated" class="orangetext">Automation with Slave DNS</b><br />
+<p>If you have a secondary DNS Server already running in your infrastructure, you can use this as purpose. In this case you already have a server which contains domain informations, for domains which should maybe be relayed on this secondary dns server. You can use this websoftware on your secondary DNS Server. If you set up your settings.php with fitting configuration, if will automatically fetch the local domains from the Bind9 files and save them into database. The script will determine a relay server (you can change determination settings in settings.php) and then rewrite postfix configuration (automatically) with the cronjob, set up in the installation, so that the secondary dns domains will all be auto-registered into the webinterface. So you do not have to do anything like configure domains or anything. You can still intervene if you determined settings for a domain if wrong and change it like you need it.</p>
+<br />
+<b id="dnsinfo" class="orangetext">DNS Entry for 2nd Server</b><br />
+<p>If you have now a master mail server and this software running on another server, you need to edit your dns records for the incoming mail domain. You need to add a second MX Entrie with lower priority, the hostname shall be the mail hostname of your secondary mail backup server (where this software is running on). In this case, if a mail is sended to this domain and your first server is not available, the mail will than be delivered to your 2ndary server and be in a waiting list and delivered in time when the master server is back online again. The mail will then be forwarded to the server, which has been set up as relay in the webinterface.</p>
+
+<b id="usermf" class="orangetext">User Management</b><br />
+<p>This webinterface comes with simple user management and permission system...</p>
+<br />
+<b id="urgentinfo" class="orangetext">Urgent Information</b><br />
+<p>Do never use this software in a running mail environment! It will break the mail configuration and function if you change configuration on a running plesk or other mail system! Only use on a dedicated server for this purpose (or maybe a secondary dns server). It is advised that you have some experience in mail administration if you use this script.</p>
+
+
+
+
+				   </section> <section class="docs-section" id="item-1-2">
+				   
+<h2 id="installation" class="orangetext">Installation</h2>
+<p>Please read this documentation and the part above carefully, before you install this software...</p>
+<b id="requirements" class="orangetext">Requirements</b>
+<p>
+<ul>
+<li>Server with Static IP Recommended + Root Access</li>
+<li>Apache2 with PHP7.4/8.0/8.1  </li>
+<li>Apache2 Modules Rewrite/Header/SSL (Recommended)</li>
+<li>PHP Modules: curl, intl, gd </li>
+<li>Postfix installed (see below for configuration)</li>
+<li>Open Firewall Ports for Mail (25, 465, 587) and the Webinterface (80/443 default)</li>
+<li>Access to MySQL Database</li>
+</ul>
+</p>
+<b id="installations" class="orangetext">Installation Steps</b>
+<ul>
+<li>Download this Repository</li>
+<li>Upload all Files out of the source directory to your webservers websites root directory...</li>
+<li>Check settings.sample.php and set up as needed, look at the comments to find out what the differents settings do or take a look below. After you have edited the file with the needed informations, rename it to settings.php. At list of Variables and what they mean can be seen below.</li>
+<li>You do not need to install any sql tables, they will be installed automatically...</li>
+<li>Setup Postfix Configuration (/etc/postix/main.cf) as described below.</li>
+<li>Setup Cronjob as described below.</li>
+</ul>
+
+
+<b id="postset" class="orangetext">Postfix Setup</b>
+<p><font color="red">Do not use this configuration in a running Mail Environment! </font></p>
+
+
+<code class="json hljs">
+<span class="hljs-attr">smtpd_banner</span> = <span class="hljs-variable">$myhostname</span> ESMTP <span class="hljs-variable">$mail_name</span> (Debian/GNU)   <br />
+<span class="hljs-attr">biff</span> = <span class="hljs-literal">no</span>  <br />
+<span class="hljs-attr">append_dot_mydomain</span> = <span class="hljs-literal">no</span>   <br />
+<span class="hljs-attr">readme_directory</span> = <span class="hljs-literal">no</span>   <br />
+<span class="hljs-attr">compatibility_level</span> = <span class="hljs-number">2</span>   <br />
+ <br />
+<span class="hljs-attr">smtpd_tls_cert_file</span>=<b>*****PATHTOSSLCERT*****</b>  <br />
+<span class="hljs-attr">smtpd_tls_key_file</span>=<b>*****PATHTOSSLKEY*****</b> <br />
+<span class="hljs-attr">smtpd_use_tls</span>=<span class="hljs-literal">yes</span>   <br />
+<span class="hljs-attr">smtpd_tls_session_cache_database</span> = btree:<span class="hljs-variable">${data_directory}</span>/smtpd_scache   <br />
+<span class="hljs-attr">smtp_tls_session_cache_database</span> = btree:<span class="hljs-variable">${data_directory}</span>/smtp_scache   <br />
+ <br />
+<span class="hljs-attr">smtpd_relay_restrictions</span> = permit_mynetworks permit_sasl_authenticated reject_unauth_destination   <br />
+<span class="hljs-attr">myhostname</span> = <b>*****THISMAILSRVHOSTNAME*****</b>   <br />
+<span class="hljs-attr">alias_maps</span> = hash:/etc/aliases   <br />
+<span class="hljs-attr">alias_database</span> = hash:/etc/aliases   <br />
+<span class="hljs-attr">myorigin</span> = /etc/mailname   <br />
+<span class="hljs-attr">mydestination</span> = <span class="hljs-variable">$myhostname</span>, localhost   <br />
+<span class="hljs-attr">relayhost</span> =   <br />
+<span class="hljs-attr">mynetworks</span> = <span class="hljs-number">127.0</span>.<span class="hljs-number">0.0</span>/<span class="hljs-number">8</span> [::ffff:<span class="hljs-number">127.0</span>.<span class="hljs-number">0.0</span>]/<span class="hljs-number">104</span> [::<span class="hljs-number">1</span>]/<span class="hljs-number">128</span>   <br />
+<span class="hljs-attr">mailbox_size_limit</span> = <span class="hljs-number">0</span>   <br />
+<span class="hljs-attr">recipient_delimiter</span> = +   <br />
+<span class="hljs-attr">inet_interfaces</span> = all   <br />
+<span class="hljs-attr">inet_protocols</span> = all   <br />
+<span class="hljs-attr">maximal_queue_lifetime</span> = <span class="hljs-number">30</span>d   <br />
+ <br /> 
+<span class="hljs-attr">relay_recipient_maps</span> =   <br />
+<span class="hljs-attr">relay_domains</span> = hash:/etc/postfix/relaydomains   <br />
+<span class="hljs-attr">transport_maps</span> = hash:/etc/postfix/transportmaps   <br /><br />
+</code><br />
+<b id="cronjobset" class="orangetext">Cronjobs</b>
+<p>To make this software function you need to setup 2 cronjobs:</p>
+<p><b>Run this cronjob Daily to reset IP Blacklist: </b> <br />
+php _webroot<span class="hljs-regexp">/</span>_cronjob<span class="hljs-regexp">/daily.php &gt;/</span>dev/<span class="hljs-literal">null</span> <span class="hljs-number">2</span>&gt;&amp;<span class="hljs-number">1</span>;</p>
+<p><b>Run this cronjob as you wish (recommended every 30min) to reload the postfix configuration and renew the transport and relaydomains like they are set up in the interface and fetched automatically (if activated): <br /></b> php _webroot<span class="hljs-regexp">/</span>_cronjob<span class="hljs-regexp">/sync.php &gt;/</span>dev/<span class="hljs-literal">null</span> <span class="hljs-number">2</span>&gt;&amp;<span class="hljs-number">1</span>;</p><br />				   
+					</section><!--//section-->		
+
+				   </section> <section class="docs-section" id="item-1-3">
+
+
+<h2 id="settingsparm" class="orangetext">Settings.php Parameter Informations</h2>
+<p>Here you can see parameters of the settings.sample.php (settings.php) file which can be adjustest for your needs.</p>
+<b id="asdasdad" class="orangetext">Site Parameters</b><br />
+<p>_TITLE_ - Title for Page to be recognizes in Cronjobs or misc.<br>_COOKIES_ - Pre-String for Cookies to run multiple Instances</p>
+<br /><b id="domainfetchparam" class="orangetext">MySQL Parameters (Mandatory)</b><br />
+<p>_SQL<em>_HOST_</em>- MySQL Server Host<br>_SQL<em>_USER_</em> - MySQL Server Username<br>_SQL<em>_PASS_</em> - MySQL Server Password<br>_SQL<em>_DB_</em> - MySQL Server Database  </p>
+<br /><b id="domainfetchparam" class="orangetext">Security Parameters</b><br />
+<p>_IP_BLACKLIST_DAILY_OP<em>LIMIT_</em> - Login IP Ban Limit for Fails<br>_CSRF_VALID_LIMIT<em>TIME_</em> - Set Valid Time in Seconds for CSRF  </p>
+<br /><b id="domainfetchparam" class="orangetext">Postfix Parameters</b><br />
+<p>_CRON<em>_RELAYMAP_</em> - Path to Transport Map.. Default is: /etc/postfix/relaydomains<br>__CRON<em>TRANSMAP_</em> - Path to Transport Map.. Default is: /etc/postfix/transportmaps  </p>
+
+<br /><b id="autodomainfetch" class="orangetext">Auto-Domain Fetch Configuration</b><br />
+
+<p>If Domains have been fetched automatically, in the settings file you can choose the handle priority with an defined array.<br><strong><em>dns-dom</em></strong> : Auto Fetched Domain, which has itself as MX Receiver<br><strong><em>dns-txt</em></strong>: Auto Fetched Domain, which has a Relay inside TXT<br><strong><em>dns-sub</em></strong>: Auto Fetched Entrie, with subdomain preconfigured in settings.php used.</p>
+
+
+<p>_CRON<em>_ARRAY_</em> - Array to Order Priorities for DNS MX Fetch Methods (See Below)<br>_CRON<em>_MODE_</em> - 1 = Get Domains from named.conf file<br>_CRON_MODE_1<em>_PATH_</em> - Set Path to named.conf file<br>_CRON<em>_MODE_</em> - 2 = Get Domains cached File Names in Folder<br>_CRON_MODE_1<em>_PATH_</em> - Set Path to Bind Cache Files Folder<br>_CRON<em>_CLEANUP_</em> - Delete DNS Domains when Deleted from DNS File on DNS Cronjob Update  </p>
+
+
+<h4 id="dns-mx-fetch-method-cron-array-dns-dom-">DNS MX Fetch Method (CRON ARRAY) &quot;dns-dom&quot;</h4>
+<p>If Activated, will use domain name as Mail name if nothing else specified in before prioritised methods.<br>_CRON_DOMAIN_AS<em>RELAY_</em> - true = Active | false = Inactive<br>_CRON_DOMAIN_AS_RELAY<em>PORT_</em> - Port for Domain Relay<br>_CRON_DOMAIN_AS_RELAY<em>PROT_</em> - SMTP / SMTPS   </p>
+<h4 id="dns-mx-fetch-method-cron-array-dns-sub-">DNS MX Fetch Method (CRON ARRAY) &quot;dns-sub&quot;</h4>
+<p>If Activated, will use domain name with added subdomain as Mail name if nothing else specified in before prioritised methods.<br>_CRON_SUB_AS<em>RELAY_</em> - true = Active | false = Inactive<br>_CRON_SUB_AS_RELAY<em>SUB_</em> - Subdomain to add before Domain for example &quot;mail&quot; without dot after.<br>_CRON_SUB_AS_RELAY<em>PORT_</em> - Port for Domain Relay<br>_CRON_SUB_AS_RELAY<em>PROT_</em> - SMTP / SMTPS  </p>
+<h4 id="dns-mx-fetch-method-cron-array-dns-txt-">DNS MX Fetch Method (CRON ARRAY) &quot;dns-txt&quot;</h4>
+<p>If Activated, will use domain txt entrie with defined entrie name to get relay id and use this relay, see txt entrie which are possible in a created relay at &quot;DNS&quot; details..<br>_CRON_TXT_TO<em>RELAY_</em> - true = Active | false = Inactive<br>_CRON_TXT_TO_RELAY<em>STRING_</em> - TXT Entrie Descriptor which will be used to find the relay id  </p>
+				   
+				   </section>
+				   
+				   	</section> <section class="docs-section" id="item-1-4">
+<h2 id="default-login-for-webinterface" class="orangetext">Default Login for Webinterface</h2>
+<div class="alert alert-danger"><b>Change the initial password after you have succesfully authenticated the first time!</b></div>
+<p>Username: admin<br>Passwort: changeme</p>					
+					
+					</section>
+			    </article>
+			    <article class="docs-article" id="section-9" style="padding-top: 0px;">
+					<header class="docs-header">
+					    <h2 class="docs-heading">Various</h2>
+					    <section class="docs-intro">
+						    <p>Here you can see various pages with licensing and support informations!</p>
+						</section><!--//docs-intro-->
+				    </header>
+					<section class="docs-section" id="item-9-1" style="padding-top: 0px;">
+						<h2 class="section-heading">How to get support?</h2>
+						<p>There are different ways to get support for our products. You can write comments in our specific websites section for the related product, but the best way it to write in our forum, as we are getting notifications about that! So if you need any help, sign in at our forum and we will do what we can to serve you. If you do not want to register at our forum, you are invited to write us for support at requests@bugfish.eu.</p>
+						<a href="https://www.bugfish.eu" class="btn btn-primary" target="_blank"><i class="fas fa-link me-2"></i> My Website</a>
+						<a href="https://forum.bugfish.eu/" class="btn btn-warning" target="_blank"><i class="fas fa-bug me-2"></i> My Forum</a>
+					</section><!--//section-->	
+					<section class="docs-section" id="item-9-2">
+						<h2 class="section-heading">License Informations</h2>
+						<h4>License Informations of this Software Code</h4>
+		Copyright 2022 www.bugfish.eu Jan-Maurice Dahlmanns (Bugfish)<br />
+		This Product is running with MIT LICENSE<br /><br />
+
+		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br /><br />
+
+		The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br /><br />
+
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br /><br />
+						<h4>License Informations of this Github Page</h4>
+				       <p> <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank" rel="noopener">Xiaoying Riley</a> for developers <br/>(And modified by <a href="https://www.bugfish.eu" target="_blank" rel="noopener">bugfish</a>)<br />You are only allowed to use this template if you include this attribution!</small></p>					
+					</section><!--//section-->		
+			    </article><!--//docs-article-->
+			</div> <!--//docs-container--> 
+		</div><!--//docs-content-->   
+    </div><!--//docs-wrapper-->       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="assets/js/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+</body>
+</html> 
