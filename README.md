@@ -6,14 +6,31 @@
 
 Here you can see general informations about this software, you should check them urgently before you use it! I hope you will get an understanding what this software is for and how you can use it. If you have questions outside this documentations do not hesitate to contact me! This software will occupy the email functionality of the server it is installed on, keep this in mind - this script will break a running mail configuration and change it for its purpose! It can not be used with plesk or other software which does manage mail configurations side-by-side. It is clearly advised, to install this sofware on a dedicated server for it!
 
-This software has been tested on different linux system with postfix in standalone mode and with bind together if auto-domain-fetching for domain relaying is needed.
-Tested on: Debian 8/9/10/11
-Tested on: Ubuntu 16/18/20/22
-Tested on: Different Postfix Versions (Standalone)
-Tested on: DIfferent Bind9 Versions (Auto-Fetch Domains)
-About this Software
-
 This websoftware makes your server to a mail backup relay! It can be used standalone, by users configuring domains which should be relay to master-mail-servers - besides that this panel can be used on a secondary dns server and fetch to registered dns domains. More informations below. To summarize, if you have a mail server which is receiving and sending mails this server will be untouched. But if you plan to have a second server as backup, so if your master-mail server goes offline and you want to store incoming mail on a secondary mail server until the master server is online again. The mail will then be forwarded to the "real" server. You can set up the related Master-Mail Server per domain and you can set up different Relay Servers, which than can be connected to Mail Domains.
+
+## Compatibility
+This software has been tested on different linux system with postfix in standalone mode and with bind together if auto-domain-fetching for domain relaying is needed.  
+Tested on: Debian 8/9/10/11  
+Tested on: Ubuntu 16/18/20/22  
+Tested on: Different Postfix Versions (Standalone)  
+Tested on: DIfferent Bind9 Versions (Auto-Fetch Domains)  
+Feel free to try this software in higher OS versions.   
+There should be no compatibility problems, if the PHP8 Version is running.
+
+## Documentation
+For Documentation take a look at the index.html file in the docs directory! You can open it with any webbrowser...
+
+You can find the Documentation here:  
+https://bugfishtm.github.io/Mail-Relaying-over-DNS/  
+
+You can find the Github Project here:  
+https://github.com/bugfishtm/Mail-Relaying-over-DNS  
+
+My General Github Project Page is here:  
+https://bugfishtm.github.io
+
+## Example Image
+![plot](./_images/1.png)
 
 ## Automation with Slave DNS
 
@@ -29,18 +46,6 @@ This webinterface comes with simple user management and permission system...
 ## Urgent Information
 
 Do never use this software in a running mail environment! It will break the mail configuration and function if you change configuration on a running plesk or other mail system! Only use on a dedicated server for this purpose (or maybe a secondary dns server). It is advised that you have some experience in mail administration if you use this script.
-
-## Documentation
-For Documentation take a look at the index.html file in the docs directory! You can open it with any webbrowser...
-
-You can find the Documentation here:  
-https://bugfishtm.github.io/Mail-Relaying-over-DNS/  
-
-You can find the Github Project here:  
-https://github.com/bugfishtm/Mail-Relaying-over-DNS  
-
-My General Github Project Page is here:  
-https://bugfishtm.github.io
 
 
 ## Example Image
