@@ -53,7 +53,7 @@ Username: admin
 Passwort: changeme
 
 ## Issues
-if you encounter issues or have questions using this software, do not hesitate write us at our forum on www.bugfish.eu!
+if you encounter issues or have questions using this software, do not hesitate write us at our forum on www.bugfish.eu! Besides that you can request help at request@bugfish.eu. We will do our best to provide support if needed!
 
 ----------------------------------------------------------------
 ##### more at www.bugfish.eu 
