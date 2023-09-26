@@ -53,8 +53,8 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Settings</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Initial Login</a></li>
 					<!-- Various Informations -->
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-hashtag"></i></span>Various</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1" target="_blank">How to get support?</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-hashtag"></i></span>Additional Informations</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1" target="_blank">Support</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2" target="_blank">License</a></li>
 					<!-- Impressum and Bugfish Link -->
 				    <li class="nav-item section-title mt-3"><a class="nav-link"><span class="theme-icon-holder me-2"><i class="fas fa-link"></i></span>Links</a></li>
@@ -80,20 +80,10 @@
 				    <section class="docs-section" id="item-1-1">
 
 <h2 id="mail-relaying-over-dns" class="orangetext">Informations</h2>
-<p>Here you can see general informations about this software, you should check them urgently before you use it! I hope you will get an understanding what this software is for and how you can use it. If you have questions outside this documentations do not hesitate to contact me! This software will occupy the email functionality of the server it is installed on, keep this in mind - this script will break a running mail configuration and change it for its purpose! It can not be used with plesk or other software which does manage mail configurations side-by-side. It is clearly advised, to install this software on a dedicated server for it!<br /><br />
 
-<b>Introduction Video</b><br />
- <video width="320" height="240" controls>
-  <source src="./Introduction.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video> <br /><a href="./Introduction.mp4" target="_blank">Download Introduction Video</a> | <a href="./presentation.pptx" target="_blank">Download Presentation</a><br /><br />
-
-<b>Advanced Information Video</b><br />
-<video width="320" height="240" controls>
-  <source src="./information.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video> <br />
- <a href="./information.mp4" target="_blank">Download Information Video</a> 
+<b>This software lets you easily setup a secondary MX Backup Server for incoming Mails!</b><br />
+<br />
+If you are using this software, remember to setup a secondary "MX" DNS Record on the related domain, to make incoming mail relayed to the server holding this software, when the first server times out.
 <br /><br />
 This software has been tested on different linux system with postfix in standalone mode and with bind together if auto-domain-fetching for domain relaying is needed.<br />
 <b>Tested on:</b> Debian 8/9/10/11<br />
@@ -102,6 +92,19 @@ This software has been tested on different linux system with postfix in standalo
 <b>Tested on:</b> DIfferent Bind9 Versions (Auto-Fetch Domains)</p>
 <b id="aboutsoftware" class="orangetext">About this Software</b><br />
 <p>This websoftware makes your server to a mail backup relay! It can be used standalone, by users configuring domains which should be relay to master-mail-servers - besides that this panel can be used on a secondary dns server and fetch to registered dns domains. More informations below. To summarize, if you have a mail server which is receiving and sending mails this server will be untouched. But if you plan to have a second server as backup, so if your master-mail server goes offline and you want to store incoming mail on a secondary mail server until the master server is online again. The mail will then be forwarded to the "real" server. You can set up the related Master-Mail Server per domain and you can set up different Relay Servers, which than can be connected to Mail Domains.</p>
+
+<b>Introduction Video</b><br />
+ <video width="320" height="240" style="padding: 10px;" controls>
+  <source src="./Introduction.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> <video width="320" height="240" style="padding: 10px;" controls>
+  <source src="./information.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video><br /><a href="./Introduction.mp4" target="_blank">Download Introduction Video</a> | <a href="./presentation.pptx" target="_blank">Download Presentation</a> | 
+
+ <a href="./information.mp4" target="_blank">Download Information Video</a> 
+<br /><br />
+
 <h3>Screenshots</h3> <br />
 
 <div class="simplelightbox-gallery row mb-3">
@@ -119,13 +122,13 @@ This software has been tested on different linux system with postfix in standalo
 <br />
 <b id="automated" class="orangetext">Automation with Slave DNS</b><br />
 <p>If you have a secondary DNS Server already running in your infrastructure, you can use this as purpose. In this case you already have a server which contains domain informations, for domains which should maybe be relayed on this secondary dns server. You can use this websoftware on your secondary DNS Server. If you set up your settings.php with fitting configuration, if will automatically fetch the local domains from the Bind9 files and save them into database. The script will determine a relay server (you can change determination settings in settings.php) and then rewrite postfix configuration (automatically) with the cronjob, set up in the installation, so that the secondary dns domains will all be auto-registered into the webinterface. So you do not have to do anything like configure domains or anything. You can still intervene if you determined settings for a domain if wrong and change it like you need it.</p>
-<br />
+
 <b id="dnsinfo" class="orangetext">DNS Entry for 2nd Server</b><br />
 <p>If you have now a master mail server and this software running on another server, you need to edit your dns records for the incoming mail domain. You need to add a second MX Entrie with lower priority, the hostname shall be the mail hostname of your secondary mail backup server (where this software is running on). In this case, if a mail is sended to this domain and your first server is not available, the mail will than be delivered to your 2ndary server and be in a waiting list and delivered in time when the master server is back online again. The mail will then be forwarded to the server, which has been set up as relay in the webinterface.</p>
 
 <b id="usermf" class="orangetext">User Management</b><br />
 <p>This webinterface comes with simple user management and permission system...</p>
-<br />
+
 <b id="urgentinfo" class="orangetext">Urgent Information</b><br />
 <p>Do never use this software in a running mail environment! It will break the mail configuration and function if you change configuration on a running plesk or other mail system! Only use on a dedicated server for this purpose (or maybe a secondary dns server). It is advised that you have some experience in mail administration if you use this script.</p>
 
@@ -239,31 +242,28 @@ php _webroot<span class="hljs-regexp">/</span>_cronjob<span class="hljs-regexp">
 					
 					</section>
 			    </article>
-			    <article class="docs-article" id="section-9" style="padding-top: 0px;">
-					<header class="docs-header">
-					    <h2 class="docs-heading">Various</h2>
+			    <article class="docs-article" id="section-9" >
+				    <header class="docs-header">
+					    <h2 class="docs-heading">Additional Informations</h2>
 					    <section class="docs-intro">
-						    <p>Here you can see various pages with licensing and support informations!</p>
-						</section><!--//docs-intro-->
+						    <p>Here you can see various informations about licenses and how to get support related to this product. Do not hesitate to give us feedback about your user experience or critique about our software.</p>
+						</section>
 				    </header>
-					<section class="docs-section" id="item-9-1" style="padding-top: 0px;">
-						<h2 class="section-heading">How to get support?</h2>
+					<section class="docs-section" id="item-9-1" style="padding-top: 0px; border-bottom: none;">
+						<br /><h2 class="section-heading">Support</h2>
 						<p>There are different ways to get support for our products. You can write comments in our specific websites section for the related product, but the best way it to write in our forum, as we are getting notifications about that! So if you need any help, sign in at our forum and we will do what we can to serve you. If you do not want to register at our forum, you are invited to write us for support at requests@bugfish.eu.</p>
 						<a href="https://www.bugfish.eu" class="btn btn-primary" target="_blank"><i class="fas fa-link me-2"></i> My Website</a>
 						<a href="https://bugfish.eu/forum" class="btn btn-warning" target="_blank"><i class="fas fa-bug me-2"></i> My Forum</a>
-					</section><!--//section-->	
-					<section class="docs-section" id="item-9-2">
+					</section>
+					<section class="docs-section" id="item-9-2" style="border-bottom: none;">
 						<h2 class="section-heading">License Informations</h2>
-						<h4>License Informations of this Software Code</h4>
-		Copyright 2022 www.bugfish.eu Jan-Maurice Dahlmanns (Bugfish)<br />
-		This Product is running with MIT LICENSE<br /><br />
-
-		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br /><br />
-
-		The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br /><br />
-
-		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br /><br />
-						<h4>License Informations of this Github Page</h4>
+						<br /><h4>Image Downloader License</h4>
+						<p>Copyright 2023 www.bugfish.eu Jan-Maurice Dahlmanns (Bugfish)<br />
+						This Product is running with MIT LICENSE<br /><br />
+						Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br /><br />
+						The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br /><br />
+						THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.		</p>
+						<br /><h4>This Github Page Templates License</h4>
 				       <p> <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
 			            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank" rel="noopener">Xiaoying Riley</a> for developers <br/>(And modified by <a href="https://www.bugfish.eu" target="_blank" rel="noopener">bugfish</a>)<br />You are only allowed to use this template if you include this attribution!</small></p>					
 					</section><!--//section-->		

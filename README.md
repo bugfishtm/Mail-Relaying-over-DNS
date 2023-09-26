@@ -2,9 +2,18 @@
 ![Status](https://img.shields.io/badge/Status-Finished-green)
 ![License](https://img.shields.io/badge/License-MIT-black)
 ![Version](https://img.shields.io/badge/Version-3.1-white)
+
+Repository: https://github.com/bugfishtm/Mail-Relaying-over-DNS  
+Documentation: https://bugfishtm.github.io/Mail-Relaying-over-DNS/  
+The documentation is available in this repositories "docs" folder!
+
 # Mail Relaying over DNS [MRoD]
 
 Here you can see general informations about this software, you should check them urgently before you use it! I hope you will get an understanding what this software is for and how you can use it. If you have questions outside this documentations do not hesitate to contact me! This software will occupy the email functionality of the server it is installed on, keep this in mind - this script will break a running mail configuration and change it for its purpose! It can not be used with plesk or other software which does manage mail configurations side-by-side. It is clearly advised, to install this sofware on a dedicated server for it!
+
+If you are using this software, remember to setup a secondary "MX" DNS Record on the related domain, to make incoming mail relayed to the server holding this software, when the first server times out.
+
+This software will give you the opportunity to easily setup a backup MX Server for incoming E-Mails!
 
 This websoftware makes your server to a mail backup relay! It can be used standalone, by users configuring domains which should be relay to master-mail-servers - besides that this panel can be used on a secondary dns server and fetch to registered dns domains. More informations below. To summarize, if you have a mail server which is receiving and sending mails this server will be untouched. But if you plan to have a second server as backup, so if your master-mail server goes offline and you want to store incoming mail on a secondary mail server until the master server is online again. The mail will then be forwarded to the "real" server. You can set up the related Master-Mail Server per domain and you can set up different Relay Servers, which than can be connected to Mail Domains.
 
@@ -16,18 +25,6 @@ Tested on: Different Postfix Versions (Standalone)
 Tested on: DIfferent Bind9 Versions (Auto-Fetch Domains)  
 Feel free to try this software in higher OS versions.   
 There should be no compatibility problems, if the PHP8 Version is running.
-
-## Documentation
-For Documentation take a look at the index.html file in the docs directory! You can open it with any webbrowser...
-
-You can find the Documentation here:  
-https://bugfishtm.github.io/Mail-Relaying-over-DNS/  
-
-You can find the Github Project here:  
-https://github.com/bugfishtm/Mail-Relaying-over-DNS  
-
-My General Github Project Page is here:  
-https://bugfishtm.github.io
 
 ## Example Image
 ![plot](./_images/1.png)
