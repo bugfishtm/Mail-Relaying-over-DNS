@@ -10,7 +10,7 @@
 
 	/* Variables */	
 	define('_HELP_',    "https://bugfishtm.github.io/Mail-Relaying-over-DNS"); 
-	define("_FOOTER_", '<div id="footer">MRoDv3.1 by <a href="https://bugfish.eu/aboutme" target="_blank" rel="noopeener">Bugfish</a> | <a href="'._IMPRESSUM_.'" target="_blank" rel="noopeener">Impressum</a> | <a href="'._HELP_.'" target="_blank" rel="noopeener">Help</a>');				
+	define("_FOOTER_", '<div id="footer">MRoDv3.2 by <a href="https://bugfish.eu/aboutme" target="_blank" rel="noopeener">Bugfish</a> | <a href="'._IMPRESSUM_.'" target="_blank" rel="noopeener">Impressum</a> | <a href="'._HELP_.'" target="_blank" rel="noopeener">Help</a>');				
 	
 	// Table Names */
 	define('_TABLE_PREFIX_',  				"mrod_");	
