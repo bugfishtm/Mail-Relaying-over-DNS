@@ -49,14 +49,17 @@ Do never use this software in a running mail environment! It will break the mail
 ![plot](./_images/main.png)
 
 ## Default Login for Webinterface
+Change this data after login!
+  
 Username: admin  
 Passwort: changeme
 
-## Issues
-if you encounter issues or have questions using this software, do not hesitate write us at our forum on www.bugfish.eu! Besides that you can request help at request@bugfish.eu. We will do our best to provide support if needed!
+## Support and Assistance
 
-----------------------------------------------------------------
-##### more at www.bugfish.eu 
-  
-Made by Jan-Maurice Dahlmanns
-  
+If you encounter any issues or require assistance, please visit [bugfish.eu/forum](https://www.bugfish.eu/forum) for additional resources. You can also contact us at [request@bugfish.eu](mailto:request@bugfish.eu), and we will do our best to assist you.
+
+This Android WebApp Example project offers a convenient way to deploy customized apps related to your website, enhancing your online presence and user experience.
+
+## License Information
+
+The license details for this Mail Relaying over DNS project can be found in the "license.md" file within the project repository. Please review this file to understand the terms and conditions of use and distribution. It is essential to comply with the project's license to ensure legal and ethical usage of the provided resources.
