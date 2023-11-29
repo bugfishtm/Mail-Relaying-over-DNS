@@ -72,9 +72,9 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
 				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Mail Relaying over DNS</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Informations</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Introduction</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Installation</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Settings</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Setup Parameters</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Initial Login</a></li>
 					<!-- Various Informations -->
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-hashtag"></i></span>Additional Informations</a></li>
@@ -100,70 +100,76 @@
 						<a href="https://github.com/bugfishtm/Mail-Relaying-over-DNS/archive/refs/heads/main.zip" class="btn btn-primary"  target="_blank"><i class="fas fa-download me-2"></i> Download</a>
 						<a href="https://github.com/bugfishtm/Mail-Relaying-over-DNS" class="btn btn-info" target="_blank"><i class="fas fa-link me-2" ></i> Github</a>
 						</section><!--//docs-intro-->
-				    </header>
-				    <section class="docs-section" id="item-1-1">
+				    </header><br /><hr>
+				    <section class="docs-section" id="item-1-1"  style="border-bottom: none;">
 
-<h2 id="mail-relaying-over-dns" class="orangetext">Informations</h2>
+<h2 id="mail-relaying-over-dns" class="orangetext">Introduction</h2>
 
-<b>This software lets you easily setup a secondary MX Backup Server for incoming Mails!</b><br /><br /><img src="./bframe.jpg"><br />Project has been developed with help of the "Bugfish Framework"<br /><br />
+<b>Easily setup a secondary MX Backup Server for incoming Mails on different Domains!</b><br /><br /><img src="./bframe.jpg" style="max-width: 200px;"><br /><small>The project's development has been facilitated through the utilization of the "Bugfish Framework."</small><br />
 <br />
-If you are using this software, remember to setup a secondary "MX" DNS Record on the related domain, to make incoming mail relayed to the server holding this software, when the first server times out.
-<br /><br />
+
+
+<h3 id="aboutsoftware" class="orangetext">General Information</h3>
+<p>This websoftware makes your server to a mail backup relay! It can be used standalone, by users configuring domains which should be relay to master-mail-servers - besides that this panel can be used on a secondary dns server and fetch to registered dns domains. More informations below. To summarize, if you have a mail server which is receiving and sending mails this server will be untouched. But if you plan to have a second server as backup, so if your master-mail server goes offline and you want to store incoming mail on a secondary mail server until the master server is online again. The mail will then be forwarded to the "real" server. You can set up the related Master-Mail Server per domain and you can set up different Relay Servers, which than can be connected to Mail Domains.</p>
+
+
+<h3 id="automated" class="orangetext">Tutorial Videos</h3>
+<div class="row">
+	<div class="col-6">
+		 <video width="320" height="240" style="padding: 10px; min-width: 100%; max-width: 200px;" controls>
+		  <source src="./Introduction.mp4" type="video/mp4">
+		  Your browser does not support the video tag.
+		</video><br /><a href="./Introduction.mp4" class="btn btn-primary" target="_blank">Download Video</a> <a class="btn btn-primary" href="./presentation.pptx" target="_blank">Download Handout</a>  <br />
+
+	</div>
+	<div class="col-6">
+		<video width="320" height="240" style="padding: 10px; min-width: 100%; max-width: 200px;" controls>
+		  <source src="./information.mp4" type="video/mp4">
+		  Your browser does not support the video tag.
+		</video><br /> 
+		 <a href="./information.mp4" class="btn btn-primary" target="_blank">Download Video</a> 
+		<br />
+	</div>
+</div><br />
+
+
+
+<h3 id="automated" class="orangetext">Compatibility</h3>
 This software has been tested on different linux system with postfix in standalone mode and with bind together if auto-domain-fetching for domain relaying is needed.<br />
 <b>Tested on:</b> Debian 8/9/10/11<br />
 <b>Tested on:</b> Ubuntu 16/18/20/22<br />
 <b>Tested on:</b> Different Postfix Versions (Standalone)<br />
 <b>Tested on:</b> DIfferent Bind9 Versions (Auto-Fetch Domains)</p>
-<b id="aboutsoftware" class="orangetext">About this Software</b><br />
-<p>This websoftware makes your server to a mail backup relay! It can be used standalone, by users configuring domains which should be relay to master-mail-servers - besides that this panel can be used on a secondary dns server and fetch to registered dns domains. More informations below. To summarize, if you have a mail server which is receiving and sending mails this server will be untouched. But if you plan to have a second server as backup, so if your master-mail server goes offline and you want to store incoming mail on a secondary mail server until the master server is online again. The mail will then be forwarded to the "real" server. You can set up the related Master-Mail Server per domain and you can set up different Relay Servers, which than can be connected to Mail Domains.</p>
-
-<b>Introduction Video</b><br />
- <video width="320" height="240" style="padding: 10px;" controls>
-  <source src="./Introduction.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video> <video width="320" height="240" style="padding: 10px;" controls>
-  <source src="./information.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video><br /><a href="./Introduction.mp4" target="_blank">Download Introduction Video</a> | <a href="./presentation.pptx" target="_blank">Download Presentation</a> | 
-
- <a href="./information.mp4" target="_blank">Download Information Video</a> 
-<br /><br />
-
-<h3>Screenshots</h3> <br />
-
-<div class="simplelightbox-gallery row mb-3">
-							<div class="col-12 col-md-4 mb-3">
-						        <a href="1.png"><img class="figure-img img-fluid shadow rounded" src="1.png" alt="" title="Sreenshot of IP Blocklist"></a>
-							</div>
-							<div class="col-12 col-md-4 mb-3">
-						        <a href="2.png"><img class="figure-img img-fluid shadow rounded" src="2.png" alt="" title="Screenshot of Relay Server Creation"></a>
-							</div><!--//col-->
-							<div class="col-12 col-md-4 mb-3">
-						        <a href="main.png"><img class="figure-img img-fluid shadow rounded" src="main.png" alt="" title="Image of User Management Panel"></a>
-							</div><!--//col-->
-						</div>
-
-<br />
-<b id="automated" class="orangetext">Automation with Slave DNS</b><br />
+<h3 id="automated" class="orangetext">DNS Automation</h3>
 <p>If you have a secondary DNS Server already running in your infrastructure, you can use this as purpose. In this case you already have a server which contains domain informations, for domains which should maybe be relayed on this secondary dns server. You can use this websoftware on your secondary DNS Server. If you set up your settings.php with fitting configuration, if will automatically fetch the local domains from the Bind9 files and save them into database. The script will determine a relay server (you can change determination settings in settings.php) and then rewrite postfix configuration (automatically) with the cronjob, set up in the installation, so that the secondary dns domains will all be auto-registered into the webinterface. So you do not have to do anything like configure domains or anything. You can still intervene if you determined settings for a domain if wrong and change it like you need it.</p>
 
-<b id="dnsinfo" class="orangetext">DNS Entry for 2nd Server</b><br />
-<p>If you have now a master mail server and this software running on another server, you need to edit your dns records for the incoming mail domain. You need to add a second MX Entrie with lower priority, the hostname shall be the mail hostname of your secondary mail backup server (where this software is running on). In this case, if a mail is sended to this domain and your first server is not available, the mail will than be delivered to your 2ndary server and be in a waiting list and delivered in time when the master server is back online again. The mail will then be forwarded to the server, which has been set up as relay in the webinterface.</p>
+<h3 id="dnsinfo" class="orangetext">Domain MX Records</h3>
+<p>When implementing this software, it's essential to configure a secondary "MX" DNS Record for the associated domain. This ensures that incoming mail is routed to the server hosting this software in the event of a timeout on the primary server. If you currently operate a primary mail server while using this software on a separate server, modifying your DNS records for the incoming mail domain is necessary. Addition of a second MX Entry with lower priority, specifying the mail hostname of your secondary mail backup server (where this software is hosted), is required. By doing so, if an email is directed to this domain and the primary server experiences unavailability, the mail will be directed to the secondary server, queued for delivery until the primary server is operational again. Subsequently, the mail will be relayed to the server designated as the relay within the web interface.</p>
 
-<b id="usermf" class="orangetext">User Management</b><br />
-<p>This webinterface comes with simple user management and permission system...</p>
+<h3 id="usermf" class="orangetext">User Management</h3>
+<p>The web interface is equipped with a straightforward user management system complemented by a simplified permission framework. This feature allows for easy administration of user accounts and grants varying levels of access based on defined permissions. With this intuitive system in place, users can efficiently manage and control access rights, ensuring a secure and tailored experience within the web interface.</p>
 
-<b id="urgentinfo" class="orangetext">Urgent Information</b><br />
-<p>Do never use this software in a running mail environment! It will break the mail configuration and function if you change configuration on a running plesk or other mail system! Only use on a dedicated server for this purpose (or maybe a secondary dns server). It is advised that you have some experience in mail administration if you use this script.</p>
+<h3 id="urgentinfo" class="orangetext">Urgent Information</h3>
+<p>We strongly advise against deploying this software in a live mail environment. Altering configurations on a running Plesk or any other mail system using this software may disrupt mail functionality and configuration settings. It is recommended to exclusively use this software on a dedicated server specifically intended for this purpose, or possibly on a secondary DNS server. Additionally, it is highly advisable that individuals utilizing this script possess a certain level of expertise and experience in mail administration to ensure proper and efficient management of the system.</p>
 
+<h3>Software Screenshots</h3>
 
-
-
-				   </section> <section class="docs-section" id="item-1-2">
+<div class="simplelightbox-gallery row mb-0">
+	<div class="col-12 col-md-4 mb-2">
+		<a href="1.png"><img class="figure-img img-fluid shadow rounded" src="1.png" alt="" title="Sreenshot of IP Blocklist"></a>
+	</div>
+	<div class="col-12 col-md-4 mb-2">
+		<a href="2.png"><img class="figure-img img-fluid shadow rounded" src="2.png" alt="" title="Screenshot of Relay Server Creation"></a>
+	</div><!--//col-->
+	<div class="col-12 col-md-4 mb-2">
+		<a href="main.png"><img class="figure-img img-fluid shadow rounded" src="main.png" alt="" title="Image of User Management Panel"></a>
+	</div><!--//col-->
+</div>
+ </section> <hr> <section class="docs-section" id="item-1-2" style="border-bottom: none;">
 				   
 <h2 id="installation" class="orangetext">Installation</h2>
-<p>Please read this documentation and the part above carefully, before you install this software...</p>
-<b id="requirements" class="orangetext">Requirements</b>
+<p>Please read this documentation and the part above carefully, before you install this software...</p><br />
+<h3 id="requirements" class="orangetext">Requirements</h3>
 <p>
 <ul>
 <li>Server with Static IP Recommended + Root Access</li>
@@ -175,7 +181,7 @@ This software has been tested on different linux system with postfix in standalo
 <li>Access to MySQL Database</li>
 </ul>
 </p>
-<b id="installations" class="orangetext">Installation Steps</b>
+<h3 id="installations" class="orangetext">Installation Steps</h3>
 <ul>
 <li>Download this Repository</li>
 <li>Upload all Files out of the source directory to your webservers websites root directory...</li>
@@ -186,7 +192,7 @@ This software has been tested on different linux system with postfix in standalo
 </ul>
 
 
-<b id="postset" class="orangetext">Postfix Setup</b>
+<h3 id="postset" class="orangetext">Postfix Setup</h3>
 <p><font color="red">Do not use this configuration in a running Mail Environment! </font></p>
 
 
@@ -221,48 +227,44 @@ This software has been tested on different linux system with postfix in standalo
 <span class="hljs-attr">relay_domains</span> = hash:/etc/postfix/relaydomains   <br />
 <span class="hljs-attr">transport_maps</span> = hash:/etc/postfix/transportmaps   <br /><br />
 </code><br />
-<b id="cronjobset" class="orangetext">Cronjobs</b>
+<h3 id="cronjobset" class="orangetext">Cronjobs</h3>
 <p>To make this software function you need to setup 2 cronjobs:</p>
 <p><b>Run this cronjob Daily to reset IP Blacklist: </b> <br />
-php _webroot<span class="hljs-regexp">/</span>_cronjob<span class="hljs-regexp">/daily.php &gt;/</span>dev/<span class="hljs-literal">null</span> <span class="hljs-number">2</span>&gt;&amp;<span class="hljs-number">1</span>;</p>
-<p><b>Run this cronjob as you wish (recommended every 30min) to reload the postfix configuration and renew the transport and relaydomains like they are set up in the interface and fetched automatically (if activated): <br /></b> php _webroot<span class="hljs-regexp">/</span>_cronjob<span class="hljs-regexp">/sync.php &gt;/</span>dev/<span class="hljs-literal">null</span> <span class="hljs-number">2</span>&gt;&amp;<span class="hljs-number">1</span>;</p><br />				   
+php _webroot/_cronjob/daily.php &gt;/dev/null 2&gt;&amp;1;</p>
+<p><b>Run this cronjob as you wish (recommended every 30min) to reload the postfix configuration and renew the transport and relaydomains like they are set up in the interface and fetched automatically (if activated): <br /></b> php _webroot/_cronjob/sync.php &gt;/dev/null 2&gt;&amp;1;</p>				   
 					</section><!--//section-->		
 
-				   </section> <section class="docs-section" id="item-1-3">
+				   </section> <hr><section class="docs-section" id="item-1-3"  style="border-bottom: none;">
 
 
-<h2 id="settingsparm" class="orangetext">Settings.php Parameter Informations</h2>
-<p>Here you can see parameters of the settings.sample.php (settings.php) file which can be adjustest for your needs.</p>
-<b id="asdasdad" class="orangetext">Site Parameters</b><br />
+<h2 id="settingsparm" class="orangetext">Setup Parameters</h2>
+<p>Here you can see parameters of the settings.sample.php (settings.php) file which can be adjustest for your needs.</p><br />
+<h3 id="asdasdad" class="orangetext">Site Parameters</h3>
 <p>_TITLE_ - Title for Page to be recognizes in Cronjobs or misc.<br>_COOKIES_ - Pre-String for Cookies to run multiple Instances</p>
-<br /><b id="domainfetchparam" class="orangetext">MySQL Parameters (Mandatory)</b><br />
-<p>_SQL<em>_HOST_</em>- MySQL Server Host<br>_SQL<em>_USER_</em> - MySQL Server Username<br>_SQL<em>_PASS_</em> - MySQL Server Password<br>_SQL<em>_DB_</em> - MySQL Server Database  </p>
-<br /><b id="domainfetchparam" class="orangetext">Security Parameters</b><br />
-<p>_IP_BLACKLIST_DAILY_OP<em>LIMIT_</em> - Login IP Ban Limit for Fails<br>_CSRF_VALID_LIMIT<em>TIME_</em> - Set Valid Time in Seconds for CSRF  </p>
-<br /><b id="domainfetchparam" class="orangetext">Postfix Parameters</b><br />
-<p>_CRON<em>_RELAYMAP_</em> - Path to Transport Map.. Default is: /etc/postfix/relaydomains<br>__CRON<em>TRANSMAP_</em> - Path to Transport Map.. Default is: /etc/postfix/transportmaps  </p>
-
-<br /><b id="autodomainfetch" class="orangetext">Auto-Domain Fetch Configuration</b><br />
-
-<p>If Domains have been fetched automatically, in the settings file you can choose the handle priority with an defined array.<br><strong><em>dns-dom</em></strong> : Auto Fetched Domain, which has itself as MX Receiver<br><strong><em>dns-txt</em></strong>: Auto Fetched Domain, which has a Relay inside TXT<br><strong><em>dns-sub</em></strong>: Auto Fetched Entrie, with subdomain preconfigured in settings.php used.</p>
+<h3 id="domainfetchparam" class="orangetext">MySQL Parameters</h3>
+<p>_SQL_HOST_</em>- MySQL Server Host<br>_SQL_USER_ - MySQL Server Username<br>_SQL_PASS_ - MySQL Server Password<br>_SQL_DB_ - MySQL Server Database  </p>
+<h3 id="domainfetchparam" class="orangetext">Security Parameters</h3>
+<p>_IP_BLACKLIST_DAILY_OP_LIMIT_ - Login IP Ban Limit for Fails<br>_CSRF_VALID_LIMIT_TIME_ - Set Valid Time in Seconds for CSRF  </p>
+<h3 id="domainfetchparam" class="orangetext">Postfix Parameters</h3>
+<p>_CRON_RELAYMAP_ - Path to Transport Map.. Default is: /etc/postfix/relaydomains<br>_CRON_TRANSMAP_ - Path to Transport Map.. Default is: /etc/postfix/transportmaps  </p>
 
 
-<p>_CRON<em>_ARRAY_</em> - Array to Order Priorities for DNS MX Fetch Methods (See Below)<br>_CRON<em>_MODE_</em> - 1 = Get Domains from named.conf file<br>_CRON_MODE_1<em>_PATH_</em> - Set Path to named.conf file<br>_CRON<em>_MODE_</em> - 2 = Get Domains cached File Names in Folder<br>_CRON_MODE_1<em>_PATH_</em> - Set Path to Bind Cache Files Folder<br>_CRON<em>_CLEANUP_</em> - Delete DNS Domains when Deleted from DNS File on DNS Cronjob Update  </p>
-
-
-<h4 id="dns-mx-fetch-method-cron-array-dns-dom-">DNS MX Fetch Method (CRON ARRAY) &quot;dns-dom&quot;</h4>
-<p>If Activated, will use domain name as Mail name if nothing else specified in before prioritised methods.<br>_CRON_DOMAIN_AS<em>RELAY_</em> - true = Active | false = Inactive<br>_CRON_DOMAIN_AS_RELAY<em>PORT_</em> - Port for Domain Relay<br>_CRON_DOMAIN_AS_RELAY<em>PROT_</em> - SMTP / SMTPS   </p>
-<h4 id="dns-mx-fetch-method-cron-array-dns-sub-">DNS MX Fetch Method (CRON ARRAY) &quot;dns-sub&quot;</h4>
-<p>If Activated, will use domain name with added subdomain as Mail name if nothing else specified in before prioritised methods.<br>_CRON_SUB_AS<em>RELAY_</em> - true = Active | false = Inactive<br>_CRON_SUB_AS_RELAY<em>SUB_</em> - Subdomain to add before Domain for example &quot;mail&quot; without dot after.<br>_CRON_SUB_AS_RELAY<em>PORT_</em> - Port for Domain Relay<br>_CRON_SUB_AS_RELAY<em>PROT_</em> - SMTP / SMTPS  </p>
-<h4 id="dns-mx-fetch-method-cron-array-dns-txt-">DNS MX Fetch Method (CRON ARRAY) &quot;dns-txt&quot;</h4>
-<p>If Activated, will use domain txt entrie with defined entrie name to get relay id and use this relay, see txt entrie which are possible in a created relay at &quot;DNS&quot; details..<br>_CRON_TXT_TO<em>RELAY_</em> - true = Active | false = Inactive<br>_CRON_TXT_TO_RELAY<em>STRING_</em> - TXT Entrie Descriptor which will be used to find the relay id  </p>
+<h3>Automation Parameters</h3>
+<p>If Domains have been fetched automatically, in the settings file you can choose the handle priority with an defined array.<br>dns-dom : Auto Fetched Domain, which has itself as MX Receiver<br>dns-txt: Auto Fetched Domain, which has a Relay inside TXT<br>dns-sub: Auto Fetched Entrie, with subdomain preconfigured in settings.php used.</p>
+<p>_CRON_ARRAY_ - Array to Order Priorities for DNS MX Fetch Methods (See Below)<br>_CRON_MODE_ - 1 = Get Domains from named.conf file<br>_CRON_MODE_1_PATH_ - Set Path to named.conf file<br>_CRON_MODE_ - 2 = Get Domains cached File Names in Folder<br>_CRON_MODE_1_PATH_ - Set Path to Bind Cache Files Folder<br>_CRON_CLEANUP_ - Delete DNS Domains when Deleted from DNS File on DNS Cronjob Update  </p>
+<h3 id="dns-mx-fetch-method-cron-array-dns-dom-">DNS MX Fetch Method (CRON ARRAY) &quot;dns-dom&quot;</h3>
+<p>If Activated, will use domain name as Mail name if nothing else specified in before prioritised methods.<br>_CRON_DOMAIN_ASRELAY_ - true = Active | false = Inactive<br>_CRON_DOMAIN_AS_RELAYPORT_ - Port for Domain Relay<br>_CRON_DOMAIN_AS_RELAYPROT_ - SMTP / SMTPS   </p>
+<h3 id="dns-mx-fetch-method-cron-array-dns-sub-">DNS MX Fetch Method (CRON ARRAY) &quot;dns-sub&quot;</h3>
+<p>If Activated, will use domain name with added subdomain as Mail name if nothing else specified in before prioritised methods.<br>_CRON_SUB_ASRELAY_ - true = Active | false = Inactive<br>_CRON_SUB_AS_RELAYSUB_ - Subdomain to add before Domain for example &quot;mail&quot; without dot after.<br>_CRON_SUB_AS_RELAYPORT_ - Port for Domain Relay<br>_CRON_SUB_AS_RELAYPROT_ - SMTP / SMTPS  </p>
+<h3 id="dns-mx-fetch-method-cron-array-dns-txt-">DNS MX Fetch Method (CRON ARRAY) &quot;dns-txt&quot;</h3>
+<p>If Activated, will use domain txt entrie with defined entrie name to get relay id and use this relay, see txt entrie which are possible in a created relay at &quot;DNS&quot; details..<br>_CRON_TXT_TORELAY_ - true = Active | false = Inactive<br>_CRON_TXT_TO_RELAYSTRING_ - TXT Entrie Descriptor which will be used to find the relay id  </p>
 				   
-				   </section>
+				   </section><hr>
 				   
 				   	</section> <section class="docs-section" id="item-1-4">
-<h2 id="default-login-for-webinterface" class="orangetext">Default Login for Webinterface</h2>
+<h3 id="default-login-for-webinterface" >Initial Login</h3>
 <div class="alert alert-danger"><b>Change the initial password after you have succesfully authenticated the first time!</b></div>
-<p>Username: admin<br>Passwort: changeme</p>					
+<p>Username: admin<br>Passwort: changeme</p>		<br />			
 					
 					</section>
 			    </article>
@@ -272,13 +274,13 @@ php _webroot<span class="hljs-regexp">/</span>_cronjob<span class="hljs-regexp">
 					    <section class="docs-intro">
 						    <p>Here you can see various informations about licenses and how to get support related to this product. Do not hesitate to give us feedback about your user experience or critique about our software.</p>
 						</section>
-				    </header>
+				    </header><br /><hr>
 					<section class="docs-section" id="item-9-1" style="padding-top: 0px; border-bottom: none;">
 						<br /><h2 class="section-heading">Support</h2>
 						<p>There are different ways to get support for our products. You can write comments in our specific websites section for the related product, but the best way it to write in our forum, as we are getting notifications about that! So if you need any help, sign in at our forum and we will do what we can to serve you. If you do not want to register at our forum, you are invited to write us for support at requests@bugfish.eu.</p>
 						<a href="https://www.bugfish.eu" class="btn btn-primary" target="_blank"><i class="fas fa-link me-2"></i> My Website</a>
 						<a href="https://bugfish.eu/forum" class="btn btn-warning" target="_blank"><i class="fas fa-bug me-2"></i> My Forum</a>
-					</section>
+					</section><hr>
 					<section class="docs-section" id="item-9-2" style="border-bottom: none;">
 						<h2 class="section-heading">License Informations</h2>
 						<br /><h4>Mail Relaying over DNS License</h4>
