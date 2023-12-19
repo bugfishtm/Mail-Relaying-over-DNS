@@ -9,7 +9,7 @@ The documentation is available in this repositories "docs" folder!
 
 # Mail Relaying over DNS [MRoD]
 
-![framework](./docs/bframe.jpg)
+![framework](./_images/logo.jpg)
 
 Here you can see general informations about this software, you should check them urgently before you use it! I hope you will get an understanding what this software is for and how you can use it. If you have questions outside this documentations do not hesitate to contact me! This software will occupy the email functionality of the server it is installed on, keep this in mind - this script will break a running mail configuration and change it for its purpose! It can not be used with plesk or other software which does manage mail configurations side-by-side. It is clearly advised, to install this sofware on a dedicated server for it!
 
