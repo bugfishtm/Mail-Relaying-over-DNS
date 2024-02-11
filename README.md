@@ -28,6 +28,12 @@ Tested on: DIfferent Bind9 Versions (Auto-Fetch Domains)
 Feel free to try this software in higher OS versions.   
 There should be no compatibility problems, if the PHP8 Version is running.
 
+## Requirements
+- Mailserver running with Postfix
+- If you want to fetch Mail Relaying Information over DNS this is working only together with Bind9 (optional)
+- Webserver with PHP8 Support
+- Mysql Database
+
 ## Example Image
 ![plot](./_images/1.png)
 
