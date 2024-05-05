@@ -68,6 +68,10 @@ If you encounter any issues or require assistance, please visit [bugfish.eu/foru
 
 This Android WebApp Example project offers a convenient way to deploy customized apps related to your website, enhancing your online presence and user experience.
 
+## Powered by Bugfish Framework
+
+![plot](./_images/bugfish-framework-banner.jpg)
+
 ## License Information
 
 The license details for this Mail Relaying over DNS project can be found in the "license.md" file within the project repository. Please review this file to understand the terms and conditions of use and distribution. It is essential to comply with the project's license to ensure legal and ethical usage of the provided resources.
