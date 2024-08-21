@@ -1,10 +1,3 @@
-![Bugfish](https://img.shields.io/badge/Bugfish-Software-orange)
-![Status](https://img.shields.io/badge/Status-Finished-green)
-![License](https://img.shields.io/badge/License-GPLv3-black)
-![Version](https://img.shields.io/badge/Version-3.2-white)
-
-Repository: https://github.com/bugfishtm/Mail-Relaying-over-DNS  
-Documentation: https://bugfishtm.github.io/Mail-Relaying-over-DNS/  
 The documentation is available in this repositories "docs" folder!
 
 # Mail Relaying over DNS [MRoD]
