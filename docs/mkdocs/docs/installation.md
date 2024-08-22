@@ -14,23 +14,20 @@ Please read this documentation and the part above carefully before you install t
 
 ### Installation Steps
 
-1. **Download this Repository**
-
 2. **Upload Files**: Upload all files from the source directory to your web server's website root directory.
 
-3. **Configure Settings**:
    - Check `settings.sample.php` and set up as needed. Look at the comments to understand the different settings or refer to the details below.
    - After editing the file with the necessary information, rename it to `settings.php`.
 
 4. **SQL Tables**: You do not need to install any SQL tables manually; they will be installed automatically.
 
-5. **Postfix Configuration**: Set up Postfix as described in the Postfix Setup section below.
+5. **Postfix Configuration**: Set up Postfix as described in the Postfix Setup section below. Edit the file /etc/postfix/main.cf.
 
 6. **Cronjobs**: Set up the required cronjobs as described in the Cronjobs section below.
 
 ### Postfix Setup
 
-**Warning**: Do not use this configuration in a running Mail Environment!
+**Warning**: Do not use this configuration in a running Mail Environment! Edit your File /etc/postfix/main.cf on a fresh server to comply with the software's expectations!
 
 ```plaintext
 smtpd_banner = $myhostname ESMTP $mail_name (Debian/GNU)

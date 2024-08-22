@@ -622,15 +622,11 @@
 <h3 id="installation-steps">Installation Steps</h3>
 <ol>
 <li>
-<p><strong>Download this Repository</strong></p>
-</li>
-<li>
 <p><strong>Upload Files</strong>: Upload all files from the source directory to your web server's website root directory.</p>
 </li>
 <li>
-<p><strong>Configure Settings</strong>:</p>
+<p>Check <code>settings.sample.php</code> and set up as needed. Look at the comments to understand the different settings or refer to the details below.</p>
 </li>
-<li>Check <code>settings.sample.php</code> and set up as needed. Look at the comments to understand the different settings or refer to the details below.</li>
 <li>
 <p>After editing the file with the necessary information, rename it to <code>settings.php</code>.</p>
 </li>
@@ -638,14 +634,14 @@
 <p><strong>SQL Tables</strong>: You do not need to install any SQL tables manually; they will be installed automatically.</p>
 </li>
 <li>
-<p><strong>Postfix Configuration</strong>: Set up Postfix as described in the Postfix Setup section below.</p>
+<p><strong>Postfix Configuration</strong>: Set up Postfix as described in the Postfix Setup section below. Edit the file /etc/postfix/main.cf.</p>
 </li>
 <li>
 <p><strong>Cronjobs</strong>: Set up the required cronjobs as described in the Cronjobs section below.</p>
 </li>
 </ol>
 <h3 id="postfix-setup">Postfix Setup</h3>
-<p><strong>Warning</strong>: Do not use this configuration in a running Mail Environment!</p>
+<p><strong>Warning</strong>: Do not use this configuration in a running Mail Environment! Edit your File /etc/postfix/main.cf on a fresh server to comply with the software's expectations!</p>
 <pre><code class="language-plaintext">smtpd_banner = $myhostname ESMTP $mail_name (Debian/GNU)
 biff = no
 append_dot_mydomain = no
