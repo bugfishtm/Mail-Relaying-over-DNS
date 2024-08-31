@@ -1,8 +1,11 @@
+# Mail Relaying over DNS (MRoD)
+
 ## Introduction
 
 **Easily set up a secondary MX Backup Server for incoming mails on different domains!**
 
 ![Bugfish Framework Banner](./bugfish-framework-banner.jpg)
+<br clear="both">
 *The project's development has been facilitated through the utilization of the "Bugfish Framework."*
 
 ---
@@ -12,13 +15,13 @@
 This web software turns your server into a mail backup relay! It can be used standalone, allowing users to configure domains to relay to master mail servers. Additionally, this panel can be used on a secondary DNS server to fetch registered DNS domains. In summary, if you have a mail server that handles sending and receiving emails, this server remains untouched. However, if you plan to use a secondary server as a backup, it will store incoming mail until the primary server is back online, at which point the mail will be forwarded to the primary server. You can configure the master mail server per domain and set up different relay servers, which can then be connected to mail domains.
 
 ### Tutorial Videos
-[Download Video](./Introduction.mp4) [Download Handout](./presentation.pptx)
+[Download Video](./Introduction.mp4){.md-button} [Download Handout](./presentation.pptx){.md-button}
 
 <video width="320" height="240" style="padding: 10px; min-width: 100%; max-width: 200px;" controls>
             <source src="./Introduction.mp4" type="video/mp4">
             Your browser does not support the video tag.</video>
 
-[Download Video](./information.mp4)
+[Download Video](./information.mp4){.md-button}
 
 <video width="320" height="240" style="padding: 10px; min-width: 100%; max-width: 200px;" controls>
             <source src="./information.mp4" type="video/mp4">
@@ -59,7 +62,6 @@ The web interface includes a simple user management system with a permission fra
 We strongly advise against deploying this software in a live mail environment. Modifying configurations on an active Plesk or other mail systems using this software may disrupt mail functionality. Use this software on a dedicated server or a secondary DNS server. Expertise in mail administration is recommended for effective system management.
 
 ### Software Screenshots
-[![Screenshot of IP Blocklist](1.png)](1.png)
-[![Screenshot of Relay Server Creation](2.png)](2.png)
-
-[![Image of User Management Panel](main.png)](main.png)
+![Screenshot of IP Blocklist](1.png)
+![Screenshot of Relay Server Creation](2.png)
+![Image of User Management Panel](main.png)

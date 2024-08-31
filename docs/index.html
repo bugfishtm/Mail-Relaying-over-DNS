@@ -10,7 +10,7 @@
       
       
       
-        <link rel="next" href="installation.html">
+        <link rel="next" href="download.html">
       
       
       <link rel="icon" href="favicon.ico">
@@ -18,7 +18,7 @@
     
     
       
-        <title>Home - Mail Relaying over DNS</title>
+        <title>Introduction - Mail Relaying over DNS</title>
       
     
     
@@ -39,7 +39,7 @@
 	{
 	  "@context": "http://schema.org",
 	  "@type": "TechArticle",
-	  "headline": "Home",
+	  "headline": "Introduction",
 	  "description": "Discover how to set up a secondary MX Backup Server for incoming mails. Learn about the software’s features, requirements, compatibility, and DNS automation. Explore tutorial videos, user management options, and urgent information for effective deployment and use.",
 	  "articleSection": "Introduction",
 	  "datePublished": "2024-08-19",
@@ -66,7 +66,7 @@
 	<meta name='author' content='bugfish, ynvnzmlzaa@gmail.com'>
     
     
-	<meta property="og:title" content="Home - Mail Relaying over DNS"/>
+	<meta property="og:title" content="Introduction - Mail Relaying over DNS"/>
 	<meta name="description" content="Discover how to set up a secondary MX Backup Server for incoming mails. Learn about the software’s features, requirements, compatibility, and DNS automation. Explore tutorial videos, user management options, and urgent information for effective deployment and use.">  
 	<meta name="og:description" content="Discover how to set up a secondary MX Backup Server for incoming mails. Learn about the software’s features, requirements, compatibility, and DNS automation. Explore tutorial videos, user management options, and urgent information for effective deployment and use.">  
 	<meta property="og:image" content="./meta.png" />
@@ -90,7 +90,16 @@
     
     
     
-  </head>
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -109,7 +118,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#mail-relaying-over-dns-mrod" class="md-skip">
           Skip to content
         </a>
       
@@ -144,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Introduction
             
           </span>
         </div>
@@ -278,12 +287,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Home
+    Introduction
   </span>
   
 
@@ -294,7 +305,7 @@
         
   
   <span class="md-ellipsis">
-    Home
+    Introduction
   </span>
   
 
@@ -305,6 +316,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -413,6 +426,26 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="download.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -554,6 +587,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -672,27 +707,25 @@
                   
 
   
-<a class="md-button" rel="noopener" target="_blank" href="https://github.com/bugfishtm/Mail-Relaying-over-DNS">Github</a> 
- <a class="md-button" rel="noopener" target="_blank" href="https://github.com/bugfishtm/Mail-Relaying-over-DNS/archive/refs/heads/main.zip">Download</a><br /><br />
   
 
 
-  <h1>Home</h1>
-
-<div><h2 id="introduction">Introduction</h2>
+<div><h1 id="mail-relaying-over-dns-mrod">Mail Relaying over DNS (MRoD)</h1>
+<h2 id="introduction">Introduction</h2>
 <p><strong>Easily set up a secondary MX Backup Server for incoming mails on different domains!</strong></p>
-<p><img alt="Bugfish Framework Banner" src="bugfish-framework-banner.jpg">
+<p><a class="glightbox" href="bugfish-framework-banner.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Bugfish Framework Banner" src="bugfish-framework-banner.jpg"></a>
+<br clear="both">
 <em>The project's development has been facilitated through the utilization of the "Bugfish Framework."</em></p>
 <hr>
 <h3 id="general-information">General Information</h3>
 <p>This web software turns your server into a mail backup relay! It can be used standalone, allowing users to configure domains to relay to master mail servers. Additionally, this panel can be used on a secondary DNS server to fetch registered DNS domains. In summary, if you have a mail server that handles sending and receiving emails, this server remains untouched. However, if you plan to use a secondary server as a backup, it will store incoming mail until the primary server is back online, at which point the mail will be forwarded to the primary server. You can configure the master mail server per domain and set up different relay servers, which can then be connected to mail domains.</p>
 <h3 id="tutorial-videos">Tutorial Videos</h3>
-<p><a href="Introduction.mp4">Download Video</a> <a href="presentation.pptx">Download Handout</a></p>
+<p><a class="md-button" href="Introduction.mp4">Download Video</a> <a class="md-button" href="presentation.pptx">Download Handout</a></p>
 <video width="320" height="240" style="padding: 10px; min-width: 100%; max-width: 200px;" controls>
             <source src="./Introduction.mp4" type="video/mp4">
             Your browser does not support the video tag.</source></video>
 
-<p><a href="information.mp4">Download Video</a></p>
+<p><a class="md-button" href="information.mp4">Download Video</a></p>
 <video width="320" height="240" style="padding: 10px; min-width: 100%; max-width: 200px;" controls>
             <source src="./information.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -721,9 +754,9 @@
 <h3 id="urgent-information">Urgent Information</h3>
 <p>We strongly advise against deploying this software in a live mail environment. Modifying configurations on an active Plesk or other mail systems using this software may disrupt mail functionality. Use this software on a dedicated server or a secondary DNS server. Expertise in mail administration is recommended for effective system management.</p>
 <h3 id="software-screenshots">Software Screenshots</h3>
-<p><a href="1.png"><img alt="Screenshot of IP Blocklist" src="1.png"></a>
-<a href="2.png"><img alt="Screenshot of Relay Server Creation" src="2.png"></a></p>
-<p><a href="main.png"><img alt="Image of User Management Panel" src="main.png"></a></p></div>
+<p><a class="glightbox" href="1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Screenshot of IP Blocklist" src="1.png"></a>
+<a class="glightbox" href="2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Screenshot of Relay Server Creation" src="2.png"></a>
+<a class="glightbox" href="main.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image of User Management Panel" src="main.png"></a></p></div>
 
 
 
@@ -770,7 +803,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
@@ -778,5 +811,7 @@
         <script src="javascripts/extra.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
