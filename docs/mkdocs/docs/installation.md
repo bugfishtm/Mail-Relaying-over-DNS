@@ -5,7 +5,7 @@ Please read this documentation and the part above carefully before you install t
 ### Requirements
 
 - Server with Static IP (Recommended) + Root Access
-- Apache2 with PHP 7.4/8.0/8.1
+- Apache2 with PHP 7.4/8.X
 - Apache2 Modules: Rewrite, Header, SSL (Recommended)
 - PHP Modules: curl, intl, gd
 - Postfix installed (see below for configuration)
@@ -62,6 +62,8 @@ transport_maps = hash:/etc/postfix/transportmaps
 ```
 
 ### Cronjobs
+
+!!! warning "Run the cronjob with a user privilegued to change the /etc/postfix folder and read DNS Folders if you use DNS Synchronisation. It is recommended to run this cronjobs as root and store the software on a seperate server."
 
 To ensure proper functionality, set up the following cronjobs:
 
